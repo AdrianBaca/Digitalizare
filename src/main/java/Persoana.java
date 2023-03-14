@@ -1,11 +1,10 @@
-//Persoana, puteam să denumesc clasa și Pacient
 public class Persoana {
     private String nume;
     private String prenume;
     private String adresa;
     private String email;
     private String telefon;
-    public Persoana(String nume, String prenume, String adresa,String email, String telefon){
+    public Persoana(String nume, String prenume, String adresa,String email, String telefon) {
         this.nume=nume;
         this.prenume=prenume;
         this.adresa=adresa;
@@ -49,11 +48,11 @@ public class Persoana {
     public void setTelefon(String telefon) {
         this.telefon = telefon;
     }
-    public String afiseazaDateContact(){
+    public String afiseazaDateContact() {
         return "Persoana " + nume + " " + prenume + " are adresa de e-mail: " + email + " și numărul de telefon: " + telefon;
     }
     @Override
     public String toString() {
-        return "Pacientul " + nume + "  "+prenume +", are adresa: " + adresa;
+        return "Persoana " + nume + "  "+prenume +", are adresa: " + adresa;
     }
 }

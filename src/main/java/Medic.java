@@ -15,11 +15,9 @@ public class Medic extends Persoana {
     public void setSpecializare(String specializare) {
         this.specializare = specializare;
     }
-        public void completeazaFisaConsultatie(Persoana persoana, Date data, String s, String diagnostic, String medicamentatie, List<String> analizeRezultate){
-        FisaConsultatie fisaC=new FisaConsultatie(persoana, data, s, super.getNume(), diagnostic, medicamentatie,analizeRezultate);
-    }
 
     public String afiseazaDateContact(){
-        return super.afiseazaDateContact() + "specializarea "+ specializare;
+        return "Medicul " + super.getNume() + " " + super.getPrenume() + " are adresa de e-mail: " + super.getEmail() + " și numărul de telefon: " + super.getTelefon();
     }
+
 }

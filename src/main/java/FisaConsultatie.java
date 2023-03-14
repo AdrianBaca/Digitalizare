@@ -2,38 +2,32 @@ import java.util.Date;
 import java.util.List;
 
 public class FisaConsultatie {
-    private Persoana persoana;
+    private Persoana pacient;
     private Date dataConsultatie;
-    private String specializareMedic;
-    private String numeMedic;
+    private Medic medic;
     private String diagnostic;
     private String medicamentatieRecomandata;
     private List<String> tipuriAnalizeRecomandate;
 
-    public FisaConsultatie(Persoana p, Date dataConsultatie, String specializareMedic, String numeMedic, String diagnostic, String medicamentatieRecomandata, List<String> tipuriAnalizeRecomandate) {
-        this.persoana = p;
+    public FisaConsultatie(Persoana p, Date dataConsultatie, Medic numeMedic, String diagnostic, String medicamentatieRecomandata, List<String> tipuriAnalizeRecomandate) {
+        this.pacient = p;
         this.dataConsultatie = dataConsultatie;
-        this.specializareMedic = specializareMedic;
-        this.numeMedic = numeMedic;
+        this.medic = numeMedic;
         this.diagnostic = diagnostic;
         this.medicamentatieRecomandata = medicamentatieRecomandata;
         this.tipuriAnalizeRecomandate = tipuriAnalizeRecomandate;
     }
 
-    public Persoana getPersoana() {
-        return persoana;
+    public Persoana getPacient() {
+        return pacient;
     }
 
     public Date getDataConsultatie() {
         return dataConsultatie;
     }
 
-    public String getSpecializareMedic() {
-        return specializareMedic;
-    }
-
-    public String getNumeMedic() {
-        return numeMedic;
+    public Medic getNumeMedic() {
+        return medic;
     }
 
     public String getDiagnostic() {

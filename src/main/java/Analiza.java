@@ -9,7 +9,7 @@ public class Analiza {
         this.pretAnaliza = pretAnaliza;
     }
 
-    public Analiza(String numeAnaliza, double pretAnaliza){
+    public Analiza(String numeAnaliza, double pretAnaliza) {
         this.numeAnaliza=numeAnaliza;
         this.pretAnaliza=pretAnaliza;
     }
