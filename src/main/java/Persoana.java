@@ -49,10 +49,10 @@ public class Persoana {
         this.telefon = telefon;
     }
     public String afiseazaDateContact() {
-        return "Persoana " + nume + " " + prenume + " are adresa de e-mail: " + email + " și numărul de telefon: " + telefon;
+        return "Persoana " + nume + " " + prenume + " are adresa de e-mail: " + email + " și numărul de telefon: " + telefon + ".";
     }
     @Override
     public String toString() {
-        return "Persoana " + nume + "  "+prenume +", are adresa: " + adresa;
+        return "Persoana " + nume + "  "+prenume +" are adresa: " + adresa + ".";
     }
 }
