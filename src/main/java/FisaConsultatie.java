@@ -1,12 +1,20 @@
+import jakarta.validation.constraints.NotNull;
+
 import java.util.Date;
 import java.util.List;
 
 public class FisaConsultatie {
+    @NotNull(message = "Trebuie completat!")
     private Persoana pacient;
+    @NotNull(message = "Trebuie completat!")
     private Date dataConsultatie;
+    @NotNull(message = "Trebuie completat!")
     private Medic medic;
+    @NotNull(message = "Trebuie completat!")
     private String diagnostic;
+    @NotNull(message = "Trebuie completat!")
     private String medicamentatieRecomandata;
+    @NotNull(message = "Trebuie completat!")
     private List<String> tipuriAnalizeRecomandate;
 
     public FisaConsultatie(Persoana p, Date dataConsultatie, Medic numeMedic, String diagnostic, String medicamentatieRecomandata, List<String> tipuriAnalizeRecomandate) {

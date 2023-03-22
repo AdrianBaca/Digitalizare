@@ -1,5 +1,10 @@
+
+import jakarta.validation.constraints.NotNull;
+
 public class Specializare {
+    @NotNull(message = "Trebuie completat!")
     private String nume;
+    @NotNull(message = "Trebuie completat!")
     private String descriere;
     public Specializare(String nume, String descriere) {
         this.nume = nume;

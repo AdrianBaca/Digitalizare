@@ -1,6 +1,11 @@
+import jakarta.validation.constraints.NotNull;
+
 public class Analiza {
+    @NotNull(message = "Trebuie completat!")
     private String numeAnaliza;
+    @NotNull(message = "Trebuie completat!")
     private String descriereAnaliza;
+    @NotNull(message = "Trebuie completat!")
     private double pretAnaliza;
 
     public Analiza(String numeAnaliza, String descriereAnaliza, double pretAnaliza) {

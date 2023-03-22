@@ -1,11 +1,17 @@
+import jakarta.validation.constraints.NotNull;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 public class RezultatAnalize {
+    @NotNull(message = "Trebuie completat!")
     private FisaConsultatie fisa;
+    @NotNull(message = "Trebuie completat!")
     private Date dataAnalize;
+    @NotNull(message = "Trebuie completat!")
     private List<String> tipuriAnalize;
+    @NotNull(message = "Trebuie completat!")
     private Map<String, Double> rezultateAnalize;
 
     public RezultatAnalize(FisaConsultatie fisa, Date dataAnalize, List<String> tipuriAnalize, Map<String, Double> rezultateAnalize) {

@@ -1,10 +1,17 @@
+import jakarta.validation.constraints.NotNull;
+
 import java.util.Date;
 
 public class Programare {
+    @NotNull(message = "Trebuie completat!")
     private Persoana pacient;
+    @NotNull(message = "Trebuie completat!")
     private Medic medic;
+    @NotNull(message = "Trebuie completat!")
     private Specializare specializare;
+    @NotNull(message = "Trebuie completat!")
     private Date data;
+    @NotNull(message = "Trebuie completat!")
     private String ora;
 
     public Programare(Persoana pacient, Medic medic, Specializare specializare, Date data, String ora) {

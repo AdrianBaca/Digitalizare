@@ -1,7 +1,7 @@
-import java.util.Date;
-import java.util.List;
+import jakarta.validation.constraints.NotNull;
 
 public class Medic extends Persoana {
+    @NotNull(message = "Trebuie completat!")
     private String specializare;
     Medic(String nume, String prenume, String adresa, String email, String specializare, String telefon){
         super(nume,prenume,adresa,email,telefon);
