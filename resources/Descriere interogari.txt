@@ -1,0 +1,14 @@
+Interogarea 1
+Sa se afiseze cat are de plata fiecare pacient, care are cel putin o analiza de facut.
+
+Interogarea 2
+Sa se afiseze numele si numarul de analize pentru fiecare pacient care are de facut cel putin o analiza.
+
+Interogare 3
+Sa se afiseze cat are de platit fiecare pacient in parte.
+
+Interogare 4
+Sa se afiseze cati pacienti si-au facut programare in ziua de 12.11.2023.
+
+Interogare 5
+Sa se afiseze numele persoanelor care nu au programare de la ora 8.
