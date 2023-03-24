@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Formular.css">
+    <meta charset="UTF-8">
+    <title>Formular programare consultație</title>
+</head>
+<body>
+<form id="programare-form">
+<label for="nume-pacient">Numele pacientului:</label>
+<input type="text" id="nume-pacient" name="nume-pacient">
+<label for="prenume-pacient">Prenumele pacientului:</label>
+<input type="text" id="prenume-pacient" name="prenume-pacient">
+<label for="adresa-pacient">Adresa pacientului:</label>
+<input type="text" id="adresa-pacient" name="adresa-pacient">
+<label for="email-pacient">Email-ul pacientului:</label>
+<input type="text" id="email-pacient" name="email-pacient">
+<label for="telefon-pacient">Telefonul pacientului:</label>
+<input type="text" id="telefon-pacient" name="telefon-pacient">
+<label for="data-programare">Data programării:</label>
+<input type="date" id="data-programare" name="data-programare" required>
+<label for="ora-programare">Ora programării:</label>
+<input type="time" id="ora-programare" name="ora-programare" required>
+<label for="doctor">Alegeți medicul:</label>
+<select id="doctor" name="doctor" required>
+<option value="">-- Alegeți medicul --</option>
+<option value="dr1">Doctor 1</option>
+<option value="dr2">Doctor 2</option>
+<option value="dr3">Doctor 3</option>
+</select>
+<label for="spec">/Alegeți specializarea:</label>
+<select id="spec" name="spec" required>
+    <option value="">-- Alegeți specializarea --</option>
+    <option value="spec1">Specializare 1</option>
+    <option value="spec2">Specializare 2</option>
+    <option value="spec3">Specializare 3</option>
+</select>
+<button id="but" type="submit">Programați consultație</button>
+</form>
+<script src="Formular.js"></script>
+</body>
+</html>

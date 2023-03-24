@@ -1,0 +1,42 @@
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+label {
+  font-weight: bold;
+  text-align:center;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+    text-align: center;
+}
+
+body {
+  background-color: brown;
+  margin: 0 auto;
+  text-align: center;
+}
